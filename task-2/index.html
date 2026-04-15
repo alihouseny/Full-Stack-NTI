@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="left">
+        <img src="/task-2/doctor-with-his-arms-crossed-white-background.jpg" alt="Doctor with arms crossed">
+    </div>
+
+    <div class="right">
+        <h1>Doctor Appointment Form</h1>
+        <hr>
+        
+        <form action="#" method="post">
+            <div class="row">
+                <div style="width: 50%;">
+                    <label for="app-date">Appointment Date</label>
+                    <input type="date" id="app-date" name="appointment_date">
+                </div>
+                <div style="width: 50%;">
+                    <label for="app-time">Appointment Time</label>
+                    <input type="time" id="app-time" name="appointment_time">
+                </div>
+            </div>
+
+            <label for="name">Name</label>
+            <div class="row">
+                <input type="text" id="fname" name="firstname" placeholder="First">
+                <input type="text" id="lname" name="lastname" placeholder="Last">
+            </div>
+
+            <label>Gender</label>
+            <div class="checkbox-group">
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+            </div>
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="####">
+
+            <label for="address">Address</label>
+            <div class="row">
+                <input type="text" id="city" name="city" placeholder="City">
+                <input type="text" id="state" name="state" placeholder="State">
+            </div>
+
+            <label for="query">Your Query</label>
+            <textarea id="query" name="query"></textarea>
+
+            <div class="appointment-type-label">
+                <span>Appointment Type</span>
+                <div class="checkboxes">
+                    <p style="margin: 0 0 5px 0; font-size: 13px;">Select which appointment type(s) you require</p>
+                    <label><input type="checkbox" name="type" value="cervix"> Cervix checkup</label>
+                    <label><input type="checkbox" name="type" value="heart"> Heart checkup</label>
+                    <label><input type="checkbox" name="type" value="eye"> Eye check-up</label>
+                    <label><input type="checkbox" name="type" value="hearing"> Hearing Test</label>
+                </div>
+            </div>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
