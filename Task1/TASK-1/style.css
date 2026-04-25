@@ -4,13 +4,13 @@ body {
     background-color: #4a6391;
 }
 
-header {
+top-bar {
     background-color: #0b2c3d;
     color: gold;
     padding: 20px;
 }
 
-header p {
+top-bar p {
     color: white;
     margin-top: 10px;
 }
